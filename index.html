@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="icon" href="">
+    <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen and (min-width: 480px)">
+	<link rel="stylesheet" href="small.css" type="text/css" media="screen and (max-width: 479px)">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">  
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="wrap_bottom">
+            <div class="wrap_top">
+                <header>
+                    <div class="flex">
+                        <div class="clear_box"></div>
+                        <div class="flex title_wrap">
+                            <div class="left_logo">
+                                <img src="img/left_logo.PNG" alt="画像">
+                            </div>
+                            <a href="#" class="title font">onlineshop</a>
+                            <div class="right_logo">
+                                <img src="img/right_logo.png" alt="画像">
+                            </div>
+                        </div>
+                        <div class="outlet">
+                            <a href="#"><span class="font_big">outlet</span>ページはこちら</a>
+                        </div>
+                    </div>
+                    <div class="flex" id="head_common">
+                        <div id="head_account">
+                            <img class="icon" src="img/icon.png" alt="画像">こんにちは<strong>ゲスト</strong>さん♪
+                        </div>
+                        <nav id="head_sub_menu">
+                            <ul class="flex right">
+                                <li><a href="#">新規会員登録</a></li>
+                                <li><a href="#">ログイン</a></li>
+                                <li><a href="#">お気に入り</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><img src="img/cart.png" alt="画像"><a href="#">カート:<strong>0</strong>円(0点)</a></li>
+                                <li><a href="#">ブランドサイト</a></li>
+                                <li><a href="#">ショップリスト</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="flex" id="head_middle">
+                        <nav id="head_brand">
+                            <ul class="clearfix flex font">
+                                <li class="top"><a href="#">TOP</a></li>
+                                <li><a href="#">axes femme</a></li>
+                                <li><a href="#">POETIQUE</a></li>
+                                <li><a href="#">KIDS</a></li>
+                                <li><a href="#">NOSTALGIE</a></li>
+                                <li><a href="#">kawaii</a></li>
+                            </ul>
+                        </nav>
+                        <div id="dv_product_search">
+                            <dl>
+                            <!--dt><img src="//www1.cdn.w2solution.com/iga/Contents/ImagesPkg/label_productsearch.jpg" alt="商品の検索" /></dt-->
+                                <dd class="btn_search_mini"><input name="ctl00$BodyHeaderMain$tbSearchWord" type="text" maxlength="250" id="ctl00_BodyHeaderMain_tbSearchWord" class="text" Value="" placeholder="キーワード" onkeypress="if (event.keyCode==13){__doPostBack(&#39;ctl00$BodyHeaderMain$lbSearch&#39;,&#39;&#39;); return false;}" /></dd>
+                                    <!--dd class="text_search_price_mini"><input name="ctl00$BodyHeaderMain$tbMinPrice" type="text" maxlength="7" id="ctl00_BodyHeaderMain_tbMinPrice" class="text" style="width:50px;" />円 ～ 
+                                    <input name="ctl00$BodyHeaderMain$tbMaxPrice" type="text" maxlength="7" id="ctl00_BodyHeaderMain_tbMaxPrice" class="text" style="width:50px;" />円</dd-->
+                                <dd class="btn_search_mini"><a id="ctl00_BodyHeaderMain_lbSearch" href="javascript:__doPostBack(&#39;ctl00$BodyHeaderMain$lbSearch&#39;,&#39;&#39;)"><img src="img/icon_search.png" width="14" height="14" alt="検索"/></a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <nav id="head_category" class="font">
+                        <ul id="category_menu" class="flex">
+                            <li class="new_item">
+                                <a href="#"><b>New Arrival</b></a>
+                                <div class="item_total">
+                                    <p>
+                                        <a>1</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <ul id="category_box" class="flex">
+                                <li class="categories short">
+                                    <a href="#">アウター</a>
+                                    <ul class="dropdwn_menu">
+                                        <li><a class="hover_line" href="#">> ジャケット、ブルゾン</a></li>
+                                        <li><a class="hover_line" href="#">> コート</a></li>
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                        <li><a class="hover_line" href="#">> SALE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="categories medium">
+                                    <a href="#">ワンピース</a>
+                                    <ul class="dropdwn_menu">
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                        <li><a class="hover_line" href="#">> SALE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="categories short">
+                                    <a href="#">トップス</a>
+                                    <ul class="dropdwn_menu">
+                                        <li><a class="hover_line" href="#">> キャミ、タンク</a></li>
+                                        <li><a class="hover_line" href="#">> カットソー</a></li>
+                                        <li><a class="hover_line" href="#">> ブラウス</a></li>
+                                        <li><a class="hover_line" href="#">> カーデ、パーカー</a></li>
+                                        <li><a class="hover_line" href="#">> ニット</a></li>
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                        <li><a class="hover_line" href="#">> SALE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="categories short">
+                                    <a href="#">ボトムス</a>
+                                    <ul class="dropdwn_menu">
+                                        <li><a class="hover_line" href="#">> スカート</a></li>
+                                        <li><a class="hover_line" href="#">> パンツ</a></li>
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                        <li><a class="hover_line" href="#">> SALE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="categories short">
+                                    <a href="#">シューズ</a>
+                                    <ul class="dropdwn_menu">
+                                        <li><a class="hover_line" href="#">> ブーツ</a></li>
+                                        <li><a class="hover_line" href="#">> サンダル</a></li>
+                                        <li><a class="hover_line" href="#">> パンプス</a></li>
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                        <li><a class="hover_line" href="#">> SALE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="categories short">
+                                    <a href="#">バッグ</a>
+                                    <ul class="dropdwn_menu">
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                        <li><a class="hover_line" href="#">> SALE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="categories">
+                                    <a href="#">アクセサリー</a>
+                                    <ul class="dropdwn_menu">
+                                        <li><a class="hover_line" href="#">> ネックレス</a></li>
+                                        <li><a class="hover_line" href="#">> ピアス</a></li>
+                                        <li><a class="hover_line" href="#">> その他</a></li>
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                        <li><a class="hover_line" href="#">> SALE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="categories">
+                                    <a href="#">ファッション雑貨</a>
+                                    <ul class="dropdwn_menu">
+                                        <li><a class="hover_line" href="#">> ストール</a></li>
+                                        <li><a class="hover_line" href="#">> 帽子</a></li>
+                                        <li><a class="hover_line" href="#">> ベルト</a></li>
+                                        <li><a class="hover_line" href="#">> その他</a></li>
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                        <li><a class="hover_line" href="#">> SALE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="categories">
+                                    <a href="#">ライフスタイル雑貨</a>
+                                    <ul class="dropdwn_menu">
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                        <li><a class="hover_line" href="#">> 雑貨小物</a></li>
+                                        <li><a class="hover_line" href="#">> axes femme HOME</a></li>
+                                        <li><a class="hover_line" href="#">> SALE</a></li>
+                                    </ul>
+                                </li>
+                                <li class="categories">
+                                    <a href="#">パーティー</a>
+                                    <ul class="dropdwn_menu" id="party">
+                                        <li><a class="hover_line" href="#">> ドレス</a></li>
+                                        <li><a class="hover_line" href="#">> バック</a></li>
+                                        <li><a class="hover_line" href="#">> シューズ</a></li>
+                                        <li><a class="hover_line" href="#">> アクセサリー</a></li>
+                                        <li><a class="hover_line" href="#">> その他</a></li>
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                        <li><a class="hover_line" href="#">> SALE</a></li>
+                                        <li><a class="hover_line" href="#">> フォーマル</a></li>
+                                    </ul>
+                                </li>
+                                <li class="categories short dropdwn_menu_left">
+                                    <a href="#">セール</a>
+                                    <ul class="dropdwn_menu" id="sale">
+                                        <li><a class="hover_line" href="#">> ~¥999</a></li>
+                                        <li><a class="hover_line" href="#">> ~¥1999</a></li>
+                                        <li><a class="hover_line" href="#">> ~¥2999</a></li>
+                                        <li><a class="hover_line" href="#">> ~¥3999</a></li>
+                                        <li><a class="hover_line" href="#">> ~¥4999</a></li>
+                                        <li><a class="hover_line" href="#">> ¥5000~</a></li>
+                                        <li><a class="hover_line" href="#">> 全て</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </header>
+                <div id="contents_wrapper">
+                    <div id="rotate_bnr_top" class="rotate_banner">
+                        <div class="tickercontainer">
+                            <div id="loopslider" class="mask">
+                                <ul class="newsticker flex">
+                                    <li>
+                                        <a class="hover_img" href="#"><img src="img/slide.jpg" alt="画像"></a>
+                                    </li>
+                                    <li>
+                                        <a class="hover_img" href="#"><img src="img/sale.jpg" alt="画像"></a>
+                                    </li>
+                                    <li>
+                                        <a class="hover_img" href="#"><img src="img/special_item.png" alt="画像"></a>
+                                    </li>
+                                    <li>
+                                        <a class="hover_img" href="#"><img src="img/sale.jpg" alt="画像"></a>
+                                    </li>
+                                    <li>
+                                        <a class="hover_img" href="#"><img src="img/slide.jpg" alt="画像"></a>
+                                    </li>
+                                    <li>
+                                        <a class="hover_img" href="#"><img src="img/special_item.png" alt="画像"></a>
+                                    </li>
+                                    <li>
+                                        <a class="hover_img" href="#"><img src="img/slide.jpg" alt="画像"></a>
+                                    </li>
+                                    <li>
+                                        <a class="hover_img" href="#"><img src="img/sale.jpg" alt="画像"></a>
+                                    </li>
+                                    <li>
+                                        <a class="hover_img" href="#"><img src="img/special_item.png" alt="画像"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Contents" class="flex">
+                        <div id="main_center">
+                            <div id="side01">
+                                <div id="left_container">
+                                    <div id="todays_arrival">
+                                        <h2>
+                                            <a href="#"><img src="img/newarrivals.PNG" alt="画像"></a>
+                                        </h2>
+                                        <ul>
+                                            <li id="arrival_backaria" class="axesfemme flex">
+                                                <div class="image_area">
+                                                    <a class="hover_img" href="#"><img src="img/sofa.jpg" alt="画像"></a>
+                                                </div>
+                                                <div class="text_area">
+                                                    <h3 class="brand">axes femme</h3>
+                                                    <p class="item_name"><a class="hover_line" href="#">【大型/別配送】シック収納付ベンチソファー大</a></p>
+                                                    <p class="price">¥33,000</p>
+                                                </div>
+                                            </li>
+                                            <li class="axesfemme flex">
+                                                <div class="image_area">
+                                                    <a class="hover_img" href="#"><img src="img/sofa.jpg" alt="画像"></a>
+                                                </div>
+                                                <div class="text_area">
+                                                    <h3 class="brand">axes femme</h3>
+                                                    <p class="item_name"><a class="hover_line" href="#">【大型/別配送】シック収納付ベンチソファー大</a></p>
+                                                    <p class="price">¥33,000</p>
+                                                </div>
+                                            </li>
+                                            <li class="axesfemme flex">
+                                                <div class="image_area">
+                                                    <a class="hover_img" href="#"><img src="img/sofa.jpg" alt="画像"></a>
+                                                </div>
+                                                <div class="text_area">
+                                                    <h3 class="brand">axes femme</h3>
+                                                    <p class="item_name"><a class="hover_line" href="#">【大型/別配送】シック収納付ベンチソファー大</a></p>
+                                                    <p class="price">¥33,000</p>
+                                                </div>
+                                            </li>
+                                            <li class="axesfemme flex">
+                                                <div class="image_area">
+                                                    <a class="hover_img" href="#"><img src="img/sofa.jpg" alt="画像"></a>
+                                                </div>
+                                                <div class="text_area">
+                                                    <h3 class="brand">axes femme</h3>
+                                                    <p class="item_name"><a class="hover_line" href="#">【大型/別配送】シック収納付ベンチソファー大</a></p>
+                                                    <p class="price">¥33,000</p>
+                                                </div>
+                                            </li>
+                                            <li class="axesfemme flex">
+                                                <div class="image_area">
+                                                    <a class="hover_img" href="#"><img src="img/sofa.jpg" alt="画像"></a>
+                                                </div>
+                                                <div class="text_area">
+                                                    <h3 class="brand">axes femme</h3>
+                                                    <p class="item_name"><a class="hover_line" href="#">【大型/別配送】シック収納付ベンチソファー大</a></p>
+                                                    <p class="price">¥33,000</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul>
+                                        <div class="search_color">カラー/サイズで検索</div>
+                                        <li id="search_100">
+                                            <div class="listColor">
+                                                <a href="#"><div id="white"></div></a>
+                                                <a href="#"><div id="red"></div></a>
+                                                <a href="#"><div id="pink"></div></a>
+                                                <a href="#"><div id="blue"></div></a>
+                                                <a href="#"><div id="navy"></div></a>
+                                                <a href="#"><div id="purple"></div></a>
+                                                <a href="#"><div id="green"></div></a>
+                                                <a href="#"><div id="yellow"></div></a>
+                                                <a href="#"><div id="brown"></div></a>
+                                                <a href="#"><div id="silver"></div></a>
+                                                <a href="#"><div id="black"></div></a>
+                                                <a href="#"><div id="gold"></div></a>
+                                            </div>
+                                        </li>
+                                        <li id="search_200">
+                                            <div>
+                                                <table id="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch" class="check_box_list">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <input id="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch_0" type="checkbox"><label for="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch_0">XS</label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input id="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch_0" type="checkbox"><label for="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch_0">S</label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input id="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch_0" type="checkbox"><label for="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch_0">M</label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input id="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch_0" type="checkbox"><label for="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch_0">L</label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input id="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch_0" type="checkbox"><label for="ctl00_ContentPlaceHolder1_ctl00_rProducts_ctl06_ColorSizeSearchBox_cblSizeSearch_0">XL</label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                        <span class="btn_search">
+                                            <a href="#">
+                                                <img src="img/btn_search.gif" alt="画像">
+                                            </a>
+                                        </span>
+                                    </ul>
+                                    <a class="left_bnr hover_img" href="#">
+                                        <img src="img/left_bnr.png" alt="画像">
+                                    </a>
+                                    <a class="left_bnr hover_img" href="#">
+                                        <img src="img/left_bnr.png" alt="画像">
+                                    </a>
+                                    <a class="left_bnr hover_img" href="#">
+                                        <img src="img/left_bnr.png" alt="画像">
+                                    </a>
+                                    <a class="left_bnr hover_img" href="#">
+                                        <img src="img/left_bnr.png" alt="画像">
+                                    </a>
+                                    <a class="left_bnr hover_img" href="#">
+                                        <img src="img/left_bnr.png" alt="画像">
+                                    </a>
+                                    <a class="left_bnr hover_img" href="#">
+                                        <img src="img/left_bnr.png" alt="画像">
+                                    </a>
+                                    <a class="left_bnr hover_img" href="#">
+                                        <img src="img/left_bnr.png" alt="画像">
+                                    </a>        
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div_top_area">
+                            <ul id="brand_select_btn" class="flex">
+                                <li class="brandselect1">
+                                    <a class="hover_img" href="#"><img src="img/brand_btn.png" alt="画像"></a>
+                                </li>
+                                <li class="brandselect1">
+                                    <a class="hover_img" href="#"><img src="img/brand_btn.png" alt="画像"></a>
+                                </li>
+                                <li class="brandselect1">
+                                    <a class="hover_img" href="#"><img src="img/brand_btn.png" alt="画像"></a>
+                                </li>
+                                <li class="brandselect1">
+                                    <a class="hover_img" href="#"><img src="img/brand_btn.png" alt="画像"></a>
+                                </li>
+                                <li class="brandselect1">
+                                    <a class="hover_img" href="#"><img src="img/brand_btn.png" alt="画像"></a>
+                                </li>
+                            </ul>
+                            <ul id="main_banner">
+                                <li class="main_bnr1">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="pop">
+                                                    <a class="hover_img" href="#"><img src="img/pop.jpg" alt="画像"></a>
+                                                </td>
+                                                <td class="pop">
+                                                    <a class="hover_img" href="#"><img src="img/pop.jpg" alt="画像"></a>
+                                                </td>
+                                                <td class="pop">
+                                                    <a class="hover_img" href="#"><img src="img/pop.jpg" alt="画像"></a>
+                                                </td>        
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="sub_pop">
+                                                    <a class="hover_img" href="#"><img src="img/online.jpg" alt="画像"></a>
+                                                </td>
+                                                <td class="sub_pop">
+                                                    <a class="hover_img" href="#"><img src="img/online.jpg" alt="画像"></a>
+                                                </td>
+                                                <td class="sub_pop">
+                                                    <a class="hover_img" href="#"><img src="img/online.jpg" alt="画像"></a>
+                                                </td>        
+                                            </tr>
+                                            <tr>
+                                                <td class="sub_pop">
+                                                    <a class="hover_img" href="#"><img src="img/online.jpg" alt="画像"></a>
+                                                </td>
+                                                <td class="sub_pop">
+                                                    <a class="hover_img" href="#"><img src="img/online.jpg" alt="画像"></a>
+                                                </td>
+                                                <td class="sub_pop">
+                                                    <a class="hover_img" href="#"><img src="img/online.jpg" alt="画像"></a>
+                                                </td>        
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                            <h2  class="font">Ranking</h2>
+                            <ul class="top_ranking" class="item_list">
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/icon_rank.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/icon_rank.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/icon_rank.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/icon_rank.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/icon_rank.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/icon_rank.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/icon_rank.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/icon_rank.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/icon_rank.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                            </ul>
+                            <h2 style="clear: both" class="font">New Arrivals</h2>
+                            <ul class="top_ranking" class="item_list">
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/new.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/new.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/new.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/new.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/new.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>  
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/new.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>
+                                <li class="item_info">
+                                    <div class="item_photo">
+                                        <a class="hover_img" href="#">
+                                            <img class="picture" src="img/rankingu.jpg" alt="画像">
+                                        </a>
+                                        <div class="ranking_icon">
+                                            <img src="img/new.png" alt="画像">
+                                        </div>
+                                        <div class="popup">
+                                            <h4 class="font">Color Variation</h4>
+                                            <ul>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>
+                                                <li>
+                                                    <a class="hover_img" href="#"><img src="img/variation.jpg" alt="画像"></a>
+                                                </li>        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3 class="brand">POETIQUE</h3>
+                                    <p class="item_name">
+                                        <a class="hover_line" href="#">レース×花柄ドッキングワンピース</a>
+                                    </p>
+                                    <p class="price">¥7,590</p>
+                                </li>                              
+                            </ul>
+                            <h2 style="clear: both" class="font">Today's Recommend</h2>
+                            <div class="dv_recommend top_ranking">
+                                <div class="dv_rc_items">
+                                    <a class="hover_img" href="#"><img src="img/rankingu.jpg" alt="画像"></a>
+                                    <div class="price">¥7,590(税込)</div>
+                                </div>
+                                <div class="dv_rc_items">
+                                    <a class="hover_img" href="#"><img src="img/rankingu.jpg" alt="画像"></a>
+                                    <div class="price">¥7,590(税込)</div>
+                                </div>
+                                <div class="dv_rc_items">
+                                    <a class="hover_img" href="#"><img src="img/rankingu.jpg" alt="画像"></a>
+                                    <div class="price">¥7,590(税込)</div>
+                                </div>
+                                <div class="dv_rc_items">
+                                    <a class="hover_img" href="#"><img src="img/rankingu.jpg" alt="画像"></a>
+                                    <div class="price">¥7,590(税込)</div>
+                                </div>
+                                <div class="dv_rc_items">
+                                    <a class="hover_img" href="#"><img src="img/rankingu.jpg" alt="画像"></a>
+                                    <div class="price">¥7,590(税込)</div>
+                                </div>
+                                <div class="dv_rc_items">
+                                    <a class="hover_img" href="#"><img src="img/rankingu.jpg" alt="画像"></a>
+                                    <div class="price">¥7,590(税込)</div>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagetop_btn">
+                <a class="hover_img" href="#"><img src="img/btn_pagetop.png" alt="画像"></a>
+            </div>
+            <nav id="footer_menu">
+                <div id="footer_wrapper" class="flex">
+                    <ul>
+                        <li>
+                            <a class="hover_line" href="#">ブランドサイト</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="hover_line" href="#">ショップブログ</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="hover_line" href="#">ショップリスト</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="hover_line" href="#">ログイン</a>
+                        </li>
+                        <li>
+                            <a class="hover_line" href="#">かんたん会員登録</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="hover_line" href="#">お知らせ</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="hover_line" href="#">よくある質問</a>
+                        </li>
+                    </ul>
+                    <div class="mobile_site"></div>
+                </div>
+            </nav>
+            <footer>
+                <ul class="flex">
+                    <li><a class="hover_line" href="#">会社概要</a>&nbsp;｜</li>
+                    <li><a class="hover_line" href="#">特定商取引法に基づく通販の表記</a>&nbsp;｜</li>
+                    <li><a class="hover_line" href="#">お問い合わせ</a>&nbsp;｜</li>
+                    <li><a class="hover_line" href="#">スマートフォンサイトはこちら</a></li>
+                </ul>
+                <p id="copyright">copyright (c) IGA All Rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
