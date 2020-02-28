@@ -1,3 +1,4 @@
+// スライドダウンメニュー
 $(function(){
     $('.categories').hover(function(){
         $("ul:not(:animated)", this).slideDown();
@@ -5,6 +6,7 @@ $(function(){
         $(".dropdwn_menu",this).hide();
     });
 });
+// カラーバリエーション
 $(function(){
     $('.item_photo').hover(function(){
         $(".popup", this).show();

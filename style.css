@@ -23,6 +23,9 @@ header{
 .font{
 	font-family: 'Noto Serif JP', serif;
 }
+.slider{
+	display: none;
+}
 a.hover_img img{
     transition:all 0.5s ease;
 }
@@ -208,6 +211,7 @@ strong{
 .categories a{
 	color: #000000;
 }
+/* ドロップダウンメニュー */
 .dropdwn_menu{
 	position: absolute;
 	margin-left: -5px;
@@ -228,6 +232,7 @@ strong{
 .dropdwn_menu li a{
 	color: rgba(255, 255, 255, 0.9);
 }
+/* ループスライダー */
 #rotate_bnr_top{
 	margin-bottom: 15px;
 }
@@ -268,6 +273,7 @@ strong{
 #contents_wrapper{
 	height: 100%;
 }
+/* NewArrivals */
 #main_center{
 	width: 23%;
 }
@@ -296,6 +302,9 @@ strong{
 	font-size: 0.7rem;
 	margin-left: 5px;
 }
+.item_name a{
+	color: #000000;
+}
 #arrival_backaria{
 	padding-top: 28%;
 	margin-top: 10%;
@@ -312,6 +321,7 @@ strong{
 	width: 95%;
 	margin-right:5%; 
 }
+/* カラー検索 */
 .search_color{
 	font-size: 0.8rem;
 	margin: 10% 10% 0 10%; 
@@ -364,6 +374,7 @@ strong{
 #gold{
 	background-color: #eee8aa;
 }
+/* サイズ検索 */
 #search_200{
 	clear: both;
 }
